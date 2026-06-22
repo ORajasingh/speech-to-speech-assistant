@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AI Voice Assistant</title>
+
+<link rel="stylesheet"
+href="styles.css">
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+<div class="workspace">
+
+
+<!-- LEFT SIDEBAR -->
+
+<aside class="history-panel">
+
+<div class="history-header">
+
+<div>
+
+<h2>
+
+Conversations
+
+</h2>
+
+<p>
+
+Past chats
+
+</p>
+
+</div>
+
+<button
+
+id="new-chat-button"
+
+class="small-button">
+
+New
+
+</button>
+
+</div>
+
+
+<div
+
+id="session-list"
+
+class="session-list">
+
+</div>
+
+</aside>
+
+
+
+
+<!-- RIGHT -->
+
+<section class="assistant-panel">
+
+<div class="topbar">
+
+<div>
+
+<h1>
+
+AI Voice Assistant
+
+</h1>
+
+<p>
+
+Speak naturally.
+
+Tamil, English and mixed language supported.
+
+</p>
+
+</div>
+
+<div
+
+id="status"
+
+class="status">
+
+Ready
+
+</div>
+
+</div>
+
+
+
+<!-- CHAT AREA -->
+
+<div
+
+id="transcript"
+
+class="transcript">
+
+<div class="empty-state">
+
+Press
+
+<b>
+
+Start Live
+
+</b>
+
+and start speaking.
+
+<br><br>
+
+The assistant automatically detects your language and replies aloud.
+
+</div>
+
+</div>
+
+
+
+<!-- INPUT -->
+
+<form
+
+id="chat-form"
+
+class="composer">
+
+<button
+
+type="button"
+
+id="mic-button"
+
+class="icon-button"
+
+title="Voice">
+
+🎤
+
+</button>
+
+
+
+<button
+
+type="button"
+
+id="live-button"
+
+class="live-button">
+
+Start Live
+
+</button>
+
+
+
+<input
+
+id="message-input"
+
+type="text"
+
+placeholder="Type or speak..."
+
+autocomplete="off">
+
+
+
+<button
+
+class="send-button"
+
+type="submit">
+
+Send
+
+</button>
+
+
+</form>
+
+
+</section>
+
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
