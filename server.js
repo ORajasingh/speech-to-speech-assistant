@@ -4,12 +4,21 @@ import cors from 'cors';
 import { MongoClient } from 'mongodb';
 import { GoogleGenAI, createPartFromBase64 } from '@google/genai';
 
+
+
 const {
     GEMINI_API_KEY,
     MONGODB_URI,
     MONGODB_DB = 'speech_assistant',
     PORT = 3000
 } = process.env;
+console.log("URI:");
+
+console.log(MONGODB_URI);
+
+console.log("Node Version:");
+
+console.log(process.version);
 
 if (!GEMINI_API_KEY) {
     throw new Error("Missing GEMINI_API_KEY");
@@ -25,7 +34,21 @@ app.use(express.json({ limit: "25mb" }));
 app.use(express.static("public")); // This serves your frontend files
 
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
-const mongo = new MongoClient(MONGODB_URI);
+const mongo = new MongoClient(
+
+MONGODB_URI,
+
+{
+
+tls:true,
+
+serverSelectionTimeoutMS:30000,
+
+family:4
+
+}
+
+);
 let conversations;
 
 async function connectMongo() {

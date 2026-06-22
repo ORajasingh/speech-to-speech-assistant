@@ -12,7 +12,7 @@
     "cors": "^2.8.6",
     "dotenv": "^16.6.1",
     "express": "^4.22.2",
-    "mongodb": "^6.8.0"
+    "mongodb": "^6.21.0"
   },
   "description": "A small speech assistant that uses:",
   "main": "server.js",
