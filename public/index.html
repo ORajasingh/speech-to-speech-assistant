@@ -22,7 +22,7 @@ href="styles.css">
 <div class="workspace">
 
 
-<!-- LEFT SIDEBAR -->
+<!-- LEFT -->
 
 <aside class="history-panel">
 
@@ -70,9 +70,12 @@ class="session-list">
 
 
 
+
 <!-- RIGHT -->
 
 <section class="assistant-panel">
+
+
 
 <div class="topbar">
 
@@ -86,13 +89,17 @@ AI Voice Assistant
 
 <p>
 
-Speak naturally.
+Gemini 2.5 Flash Live Preview
 
-Tamil, English and mixed language supported.
+<br>
+
+Tamil + English + Mixed Language
 
 </p>
 
 </div>
+
+
 
 <div
 
@@ -100,7 +107,7 @@ id="status"
 
 class="status">
 
-Ready
+Disconnected
 
 </div>
 
@@ -108,13 +115,17 @@ Ready
 
 
 
-<!-- CHAT AREA -->
+
+
+<!-- CHAT -->
 
 <div
 
 id="transcript"
 
 class="transcript">
+
+
 
 <div class="empty-state">
 
@@ -128,13 +139,39 @@ Start Live
 
 and start speaking.
 
+
+
 <br><br>
 
-The assistant automatically detects your language and replies aloud.
+
+
+The assistant automatically
+
+detects your language
+
+and replies aloud.
 
 </div>
 
+
+
 </div>
+
+
+
+
+
+<!-- Hidden Audio -->
+
+<audio
+
+id="audio-player"
+
+autoplay>
+
+</audio>
+
+
 
 
 
@@ -145,6 +182,8 @@ The assistant automatically detects your language and replies aloud.
 id="chat-form"
 
 class="composer">
+
+
 
 <button
 
@@ -162,6 +201,8 @@ title="Voice">
 
 
 
+
+
 <button
 
 type="button"
@@ -173,6 +214,8 @@ class="live-button">
 Start Live
 
 </button>
+
+
 
 
 
@@ -188,6 +231,8 @@ autocomplete="off">
 
 
 
+
+
 <button
 
 class="send-button"
@@ -199,18 +244,25 @@ Send
 </button>
 
 
+
 </form>
+
 
 
 </section>
 
 
-</div>
 
 </div>
 
-<script src="app.js"></script>
+
+
+</div>
+
+
+
+<script type="module" src="live.js"></script>
 
 </body>
 
-</html>
+</html>             

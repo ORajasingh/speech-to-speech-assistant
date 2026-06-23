@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gemini Live Test</title>
+
+<style>
+
+body{
+
+font-family:Arial,sans-serif;
+
+max-width:800px;
+
+margin:40px auto;
+
+padding:20px;
+
+}
+
+button{
+
+padding:12px 24px;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+#status{
+
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+#messages{
+
+margin-top:20px;
+
+border:1px solid #ddd;
+
+padding:20px;
+
+height:400px;
+
+overflow:auto;
+
+border-radius:10px;
+
+}
+
+.message{
+
+padding:10px;
+
+margin-bottom:10px;
+
+border-radius:10px;
+
+}
+
+.user{
+
+background:#f2f2f2;
+
+}
+
+.ai{
+
+background:#e8f4ff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Gemini 3.1 Flash Live Preview</h1>
+
+<button id="startBtn">
+
+Start Live
+
+</button>
+
+<button id="stopBtn">
+
+Stop Live
+
+</button>
+
+<div id="status">
+
+Disconnected
+
+</div>
+
+<div id="messages">
+
+</div>
+
+<script type="module" src="live.js"></script>
+</body>
+
+</html>
